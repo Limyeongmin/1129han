@@ -7,20 +7,98 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-
+    android:orientation="vertical"
     tools:context="com.example.lym.han1129_first.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="실시간 강의 피드백"
+            android:textSize="40dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.18"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/stdNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:hint="학번"
+            android:layout_gravity="center"
+            android:layout_below="@+id/emailInput"/>
+
+        <EditText
+            android:id="@+id/pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/professor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="교수"/>
+
+            <RadioButton
+                android:id="@+id/student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="학생"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/btnSign"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember login"
+            android:id="@+id/checkBox"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/loginButton"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

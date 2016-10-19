@@ -27,6 +27,7 @@ public class Pro_main extends Activity {
                     Intent i = new Intent(Pro_main.this, Sign.class);
                     startActivity(i);
 
+
             }
         });
 

@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -19,6 +18,7 @@ public class MainActivity extends Activity {
     CheckBox autoLogin;
     RadioButton professor, student;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -29,10 +29,6 @@ public class MainActivity extends Activity {
         professor = (RadioButton) findViewById(R.id.professor);
         student = (RadioButton) findViewById(R.id.student);
         btnSign = (Button) findViewById(R.id.btnSign);
-
-
-
-
 
         //회원가입 버튼 정의
         btnSign.setOnClickListener(new View.OnClickListener() {
@@ -50,16 +46,32 @@ public class MainActivity extends Activity {
         //로그인 버튼 정의
         btnLogin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if(stdNum.getText().toString().equals("") ||
-                        pw.getText().toString().equals("")) {
-                    Toast.makeText(MainActivity.this, "입력오류입니다.",Toast.LENGTH_SHORT).show();
-                    return;
-                }else{
-                    //2016-10-18
-                    //로그인 넘어가는 화면 작성
+                if (student.isChecked()){
+                    Intent i = new Intent(MainActivity.this, Sign.class);
+                    startActivity(i);
+                }else if(professor.isChecked()){
+                    Intent i = new Intent(MainActivity.this, Pro_main.class);
+                    startActivity(i);
                 }
             }
+            /*  에러뜨네 ㅅㅂ
+            public void onClick(View v) {
+                if (student.isChecked()) {
+                    if (stdNum.getText().toString().length() == 0) {
+                        Toast.makeText(MainActivity.this, "전화번호를 입력하세요!", Toast.LENGTH_SHORT).show();
+                        stdNum.requestFocus();
+                        return;
+                    } else if (pw.getText().toString().length() == 0) {
+                        Toast.makeText(MainActivity.this, "비밀번호를 입력해주세요!", Toast.LENGTH_SHORT).show();
+                        pw.requestFocus();
+                        return;
+                    } else {
+                        Toast.makeText(MainActivity.this, "로그인 성공", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(MainActivity.this, Pro_main.class);
+                        startActivity(i);
+                    }
+                }
+            }*/
         });
-
     }
 }

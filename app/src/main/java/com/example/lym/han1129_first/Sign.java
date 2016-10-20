@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+
 /**
  * Created by LYM on 2016-10-18.
  */
@@ -30,9 +31,9 @@ public class Sign extends Activity {
         stdName = (EditText) findViewById(R.id.stdName);
         stdPassword = (EditText) findViewById(R.id.stdPassword);
         stdNumber = (EditText) findViewById(R.id.stdNumber);
-        stdGrade = (Spinner) findViewById(R.id.stdGrade);
         stdNum = (EditText) findViewById(R.id.stdNum);
         //스피너 정의
+        stdGrade = (Spinner) findViewById(R.id.stdGrade);
         final String [] grade ={"1","2","3","4"};
         ArrayAdapter<String> adapter;
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, grade);

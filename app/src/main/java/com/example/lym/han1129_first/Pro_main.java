@@ -37,7 +37,7 @@ public class Pro_main extends Activity {
         viewClass.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Intent i = new Intent(Pro_main.this, Sign.class);
+                Intent i = new Intent(Pro_main.this, Pro_evaluation.class);
                 startActivity(i);
 
             }

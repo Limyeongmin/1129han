@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datepicker"
+            android:calendarViewShown="false"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선 택 하 기"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="타 교수 c언어 강의 점수 보기"/>
+        <ListView
+            android:id="@+id/pro_grade"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+        <Button
+            android:id="@+id/detail"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="자세히 보기(imsi)"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오름차순으로 보기"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내림차순으로 보기"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/gotoMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메인화면으로 이동"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -40,7 +40,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Create_class"></activity>
-
+        <activity android:name=".Pro_evaluation"></activity>
+        <activity android:name=".Pro_evaluation2"></activity>
+        <activity android:name=".Pro_view"></activity>
 
 
     </application>

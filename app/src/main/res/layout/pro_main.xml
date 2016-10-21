@@ -6,11 +6,12 @@
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_weight="0.5">
+        android:layout_weight="0.5"
+        android:gravity="center">
         <Button
             android:id="@+id/makeClass"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_width="250dp"
             android:textSize="20dp"
             android:text="강의 개설"
             android:layout_gravity="center"/>
@@ -18,11 +19,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5">
+        android:layout_weight="0.5"
+        android:gravity="center">
         <Button
             android:id="@+id/viewClass"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_width="250dp"
             android:textSize="20dp"
             android:text="강의 평가"
             android:layout_gravity="center"/>

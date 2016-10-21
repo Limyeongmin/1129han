@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="0.25"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="타 교수 c언어 평가보기"
+            android:textSize="20dp"
+            android:id="@+id/other_pro"/>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.25"
+        android:gravity="center">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="2011****님의 c언어 수업 평가"
+            android:textSize="20dp"
+            android:id="@+id/std_evaluation"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="52dp"
+            android:layout_gravity="right"
+            android:hint="46점"
+            android:id="@+id/std_score"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.25"
+        android:gravity="center">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="학생 건의사항"
+            android:id="@+id/comments"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="커멘트 들어갈 곳 입니다.강의 내용이 최신 동향 기술과 맞지 않는거 같습니다. 개선이 필요합니다."/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0.25"
+        android:gravity="center">
+        <Button
+            android:id="@+id/gotoMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메인화면으로 이동"/>
+    </LinearLayout>
+</LinearLayout>

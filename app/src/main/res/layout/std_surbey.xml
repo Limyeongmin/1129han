@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="38dp"
+            android:layout_marginTop="30dp"
+            android:text="c언어(월 1-4)강의 평가"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:maxWidth="30dp"
+            android:minLines="5"
+            android:maxHeight="10dp"
+            android:text="궁상환 교수님의 c언어 수업에 대한 강의 평가입니다. 강의 질의 향상을 위한 학생 여러분의 공정한 평가 부탁드립니다."/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="질문 1. 강의내용이 만족스러우셨습니까?"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a"
+                    android:text="A. 매우 만족스럽다." />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b"
+                    android:text="B. 만족스럽다." />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/c"
+                    android:text="C. 만족스럽지 못하다." />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d"
+                    android:text="D. 매우 만족스럽지 못하다." />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e"
+                    android:text="E. 잘모르겠다." />
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="질문 2. 교수님께 건의할 사항이 있으십니까?"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/EditText02"
+                android:layout_marginTop="15dp"
+                android:layout_width="300dp"
+                android:background="#fafafa"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:minWidth="10dp"
+                android:maxWidth="10dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/input_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="입력완료" />
+    </LinearLayout>
+</LinearLayout>

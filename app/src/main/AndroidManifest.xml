@@ -43,6 +43,8 @@
         <activity android:name=".Pro_evaluation"></activity>
         <activity android:name=".Pro_evaluation2"></activity>
         <activity android:name=".Pro_view"></activity>
+        <activity android:name=".Std_Join"></activity>
+        <activity android:name=".Std_Surbey"></activity>
 
 
     </application>

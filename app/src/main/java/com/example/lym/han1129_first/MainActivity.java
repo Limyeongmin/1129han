@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (student.isChecked()){
-                    Intent i = new Intent(MainActivity.this, Sign.class);
+                    Intent i = new Intent(MainActivity.this, Std_Join.class);
                     startActivity(i);
                 }else if(professor.isChecked()){
                     Intent i = new Intent(MainActivity.this, Pro_main.class);
